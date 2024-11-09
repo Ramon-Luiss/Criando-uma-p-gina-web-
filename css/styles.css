@@ -39,7 +39,7 @@
 
 /* Hero */
 .hero {
-  background-image: url("../images/backgroung.png");
+  background-image: url("../images/background/backgroung.png");
   background-position: center;
   background-size: cover;
   position: relative;
