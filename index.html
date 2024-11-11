@@ -28,16 +28,32 @@
 
     <main class="content">
       <section class="hero">
-        
-        <div class="text-content">
-          <span>SUMMER 2020</span>
-          <h2>NEW COLLECTION</h2>
-          <p>
-            We know how large objects will act, but things on a small scale.
-          </p>
-          <button>SHOP NOW</button>
+        <div class="hero-slide active">
+          <div class="hero-content">
+            <span>SUMMER 2020</span>
+            <h2>NEW COLLECTION</h2>
+            <p>We know how large objects will act, but things on a small scale.</p>
+            <button>SHOP NOW</button>
+          </div>
+          <img src="./images/background/backgroung.png" alt="Collection Image" class="hero-image" />
         </div>
+        <div class="hero-slide">
+          <div class="hero-content">
+            <span>WINTER 2020</span>
+            <h2>NEW ARRIVALS</h2>
+            <p>Discover the elegance of the winter collection.</p>
+            <button>SHOP NOW</button>
+          </div>
+          <img src="./images/background/backgroung.png" alt="Winter Collection Image" class="hero-image" />
+        </div>
+        <!-- Adicione mais slides aqui -->
+      
+        <!-- Botões de Navegação -->
+        <button class="prev-slide" onclick="prevSlide()">&#10094;</button>
+        <button class="next-slide" onclick="nextSlide()">&#10095;</button>
       </section>
+      
+
       <section class="editors-pick">
         <h2>EDITOR'S PICK</h2>
         <p>Problems trying to resolve the conflict between</p>
@@ -186,18 +202,34 @@
           </div>
         </div>
       </section>
-      <section class="product-highlight">
-        <span class="season">SUMMER 2020</span>
-        <h2 class="product-name">Vita Classic Product</h2>
-        <p class="product-description">We know how large objects will act, but things on a small scale.</p>
-        <p class="price">$16.48</p>
-        <button class="add-to-cart">ADD TO CART</button>
-        <div class="navigation">
-          <span class="nav-arrow">&#10094;</span>
-          <span class="nav-arrow">&#10095;</span>
+      
+      <section class="product-highlight-b">
+        <div class="product-slide-b active">
+          <div class="product-content">
+            <span class="season-b">SUMMER 2020</span>
+            <h2 class="product-name-b">Vita Classic Product</h2>
+            <p class="product-description-b">We know how large objects will act, but things on a small scale.</p>
+            <p class="price-b">$16.48</p>
+            <button class="add-to-cart-b">ADD TO CART</button>
+          </div>
+          <img src="./images/vita-classic/vita-classic.png" alt="Vita Classic Product" class="product-image-b">
         </div>
-        <img src="./images/vita-classic/vita-classic.png" alt="Product Image" class="product-image">
+        <!-- Adicione mais slides aqui para o carrossel -->
+        <div class="product-slide-b">
+          <div class="product-content">
+            <span class="season-b">SUMMER 2020</span>
+            <h2 class="product-name-b">Vita Classic Product</h2>
+            <p class="product-description-b">We know how large objects will act, but things on a small scale.</p>
+            <p class="price-b">$16.48</p>
+            <button class="add-to-cart-b">ADD TO CART</button>
+          </div>
+          <img src="./images/background/promo.png" alt="Vita Classic Product" class="product-image-b">
+        </div>
+        <!-- Botões de navegação -->
+        <button class="prev-slide-b" onclick="prevProductSlide()">&#10094;</button>
+        <button class="next-slide-b" onclick="nextProductSlide()">&#10095;</button>
       </section>
+
       <section class="promo-section">
         <span class="season">SUMMER 2020</span>
         <h2 class="promo-title">Part of the Neural Universe</h2>
@@ -333,5 +365,6 @@
         <p>Made With Love By Finland All Right Reserved</p>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
