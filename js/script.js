@@ -17,8 +17,7 @@
     showSlide(currentSlide);
   }
 
-  // Auto-play
-  setInterval(nextSlide, 5000); // Altere o tempo, se necessário
+  setInterval(nextSlide, 5000);
 
   let currentProductSlide = 0;
   const productSlides = document.querySelectorAll('.product-slide-b');
@@ -39,5 +38,10 @@
     showProductSlide(currentProductSlide);
   }
 
-  // Auto-play
-  setInterval(nextProductSlide, 5000); // Ajuste o tempo conforme necessário
+  setInterval(nextProductSlide, 5000);
+
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  }
+  
